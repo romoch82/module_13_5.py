@@ -23,7 +23,7 @@ kb.add(button1)
 kb.add(button2)
 
 
-@dp.message_handler(text='Привет')
+@dp.message_handler(text='/start')
 async def start(message):
     await message.answer(f'Привет! Я бот помогающий Вашему здоровью.\n'
                          f'Чтобы начать, нажмите "Рассчитать"', reply_markup=kb)
